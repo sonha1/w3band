@@ -1,0 +1,46 @@
+1 Phân tích trang web:
+-header
+-slider
+-content:
+--about
+--tour
+--contact
+--image
+--footer
+-footer
+2, dựng base
+3. xây dựng theo phân tích
+4 Hoàn thiện
+
+
+note ::
+1, vị trí, kích thước , màu sắc, kiểu giáng(màu chữ, kiểu chữ)
+2 làm từ ngoài vào trong , từ trên xuống dưới
+3 tổng quan đến chi tiết
+
+cach viet nhanh
+<!-- ul#navigation>li*5>a -->
+cách query giống nhau thì viết chung cách nhau bởi dấu phẩy 
+
+
+header :  về phần display :
+inline-block : nó không tự set theo chiều cao của element dc
+block : nó sẽ set theo chiều cao vào chiều rộng của element
+vd : #nav>li {
+    display: inline-block;
+}
+trong # có rất nhiều thẻ li thì muốn nó lên cùng 1 hàng thì và nó có thể xet chiều rộng và chiều cao như 1 block thì nó 
+ta set cho nó thuộc tính inline-block
+
+con block thì chỉ xét cho phần tử mà nó chứa content vì khi đó nó sẽ biến phần tử đó thành 1 khối
+
+
+z-index:number;
+thì nó sẽ set cho các phần từ có thuộc tính position , number lớn hơn thì nó sẽ dc ưu tiên  
+
+Khi dùng thẻ img thì không cần set cả chiều dài và chiều rộng . mà chỉ cần set 1 cái thì cái kia nó sẽ tự ăn theo tỉ lệ của ảnh\
+
+khi dùng float thì nó sẽ bị out rả khỏi vùng block cho nên để xử lý 
+overflow :hidden cho thẻ chứa nó dùng float
+cách 2: là đặt 1 thẻ div trong thẻ lớn chưa thẻ có float và đặt nó ở dưới cùng .sạu đó đặt css cho thẻ clear đó là : clear: both;
+clear : chỉ định mặt nào nổi mà không được nổi 
